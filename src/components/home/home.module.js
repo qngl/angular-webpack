@@ -1,5 +1,7 @@
 'use strict'
 
+require('angular-ui-router')
+
 var homeController = require('./home.controller')
 var homeTemplate = require('./home.html')
 

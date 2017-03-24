@@ -1,5 +1,7 @@
 'use strict'
 
+require('angular-ui-router')
+
 var employeesController = require('./employees.controller')
 var employeesTemplate = require('./employees.html')
 
