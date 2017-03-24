@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <title>angular-webpack</title>
+  <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <navigation-component></navigation-component>
+
+    <div class="container main-container" id="main-container">
+      <div class="row">
+        <div class="center-box col-md-12" ui-view="content" >
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center">
+      &copy; {{'Company' | translate}}
+    </div>
+  </div>
+
+  <script src="/static/jquery.min.js"></script>
+  <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $('.nav-link').click(function() {
+      var navBtn = $('#navbar-toggle-btn');
+      if (navBtn.is(':visible')) {
+        navBtn.click()
+      }
+    })
+  });
+  </script>
+</body>
+
+</html>
