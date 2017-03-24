@@ -1,6 +1,5 @@
 
 var angular = require('angular')
-require('angular-i18n/angular-locale_zh-hans-cn.js')
 require('angular-ui-router')
 require('angular-ui-bootstrap')
 require('angular-translate')
